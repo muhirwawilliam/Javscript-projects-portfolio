@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Jersey+10&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Permanent+Marker&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Silkscreen:wght@400;700&family=Tiny5&display=swap');
 
 * {
-  margin: 0 0 10px 0;
+  margin: 0;
   padding: 0;
   font-family: 'Jersey 10', sans-serif;
-  font-size: 28px;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #f2f2f2; /* Light grey background like a coloring book page */
+  background: linear-gradient(135deg, #f2f2f2, #e0f7fa); /* Light gradient background */
 }
 
 .card {
@@ -21,74 +20,74 @@ body {
   border-radius: 20px;
   padding: 40px 35px;
   text-align: center;
-  border: 5px solid #FFD700; /* Golden outline like a coloring book page */
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+  border: 5px solid #FF69B4; /* Vibrant pink outline */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Light shadow for subtle depth */
 }
 
 .search-button img {
-  width: 20px;
-  height: 20px;
-  margin: 0 15px 0 14px;
+  width: 24px;
+  height: 24px;
+  margin: 0 12px 0 12px;
   border-style: none;
   cursor: pointer;
 }
 
 .search-button {
-  background: #ffb6c125;
-  border: 3px solid #FFD700;
+  background: #ffcccb; /* Light pink background */
+  border: 3px solid #FF69B4;
   align-items: center;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   cursor: pointer;
 }
 
 .search-input {
-  border: 3px solid #FFD700;
+  border: 3px solid #FF69B4;
   outline: 0;
-  background-color: #FFFACD;
+  background-color: #FFF5F5; /* Light pink background */
   color: #555;
-  padding: 10px 25px;
+  padding: 12px 20px;
   border-radius: 30px;
   flex: 1;
   margin-right: 16px;
   font-size: 18px;
-  font-family: 'Jersey 10', sans-serif;;
+  font-family: 'Jersey 10', sans-serif;
 }
 
 .weather-icon {
-  width: 170px;
-  height: 120px;
-  margin-top: 30px;
+  width: 180px;
+  height: 130px;
+  margin-top: 20px;
 }
 
 .weather-icon-details {
-  width: 100px;
-  height: 80px;
-  margin-top: 30px;
+  width: 120px;
+  height: 90px;
+  margin-top: 20px;
 }
 
 .weather h1 {
   font-size: 80px;
   font-weight: 700;
   font-family: 'Permanent Marker', sans-serif;
-  color: #FF6347;
+  color: #FF6347; /* Tomato color */
   margin-bottom: 20px;
 }
 
 .weather h2 {
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 400;
   margin-top: -10px;
   font-family: 'Jersey 10', sans-serif;
-  color: #20B2AA;
+  color: #20B2AA; /* Light teal */
 }
 
 .details {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 60px 30px 5px 5px;
+  padding: 50px 30px 10px 30px;
 }
 
 .col {
@@ -98,15 +97,15 @@ body {
 }
 
 .col img {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
-  margin-top: -10px;
+  width: 50px;
+  height: 50px;
+  margin-right: 12px;
+  margin-top: -5px;
 }
 
 .rain, .wind-speed {
   font-size: 28px;
   margin-top: 6px;
   font-family: 'Jersey 10', sans-serif;
-  color: #9dc7e9;
+  color: #87CEFA; /* Light sky blue */
 }

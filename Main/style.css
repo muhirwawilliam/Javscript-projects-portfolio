@@ -1,0 +1,130 @@
+/* General reset and font settings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif; /* Default font for body */
+  line-height: 1.6;
+  background: #f4f4f4;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+header h1 {
+  font-family: 'IBM Plex Mono', monospace; /* IBM Plex Mono for headings */
+  font-size: 5em;
+  font-weight: bold; /* Bold title */
+  margin-bottom: 10px;
+}
+
+header p {
+  font-family: 'Poppins', sans-serif; /* Regular Poppins font for paragraphs */
+  font-size: 1.2em;
+}
+
+/* Main content styling */
+main {
+  padding: 20px;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: calc(33.333% - 20px); /* Adjust width to fit 3 items per row with gaps */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 20px; /* Add space between rows */
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-item .content {
+  margin-bottom: 20px;
+}
+
+.grid-item .content h2 {
+  font-family: 'IBM Plex Mono', monospace; /* IBM Plex Mono for project titles */
+  font-size: 1.5em;
+  font-weight: bold; /* Bold titles */
+  margin-bottom: 10px;
+}
+
+.grid-item .content p {
+  font-family: 'Poppins', sans-serif; /* Regular Poppins font for project descriptions */
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+/* Button Styling */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  color: #007bff;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif; /* Use Poppins for button text */
+  font-weight: 700;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+  background-color: rgba(255, 192, 203, 0.5); /* Light pink with opacity */
+  color: #007bff;
+}
+
+/* Adjust link color within buttons */
+.btn {
+  color: inherit;
+}
+
+/* Ensure buttons within grid items */
+.grid-item .content .btn {
+  margin: 5px 0;
+}
+
+.grid-item .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Set a fixed height for the image container */
+  margin-bottom: 10px; /* Space between image and content */
+}
+
+.grid-item .image img {
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%; /* Ensure the image fills the container */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  border-radius: 8px; /* Match image border radius with card */
+}
+
+@media screen and (max-width: 768px) {
+  .projects-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+  .grid-item {
+    width: 100%; /* Take full width on smaller screens */
+    margin-bottom: 20px; /* Add spacing between items */
+  }
+}
