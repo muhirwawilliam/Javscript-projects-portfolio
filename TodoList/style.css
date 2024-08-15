@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+}
+
+body {
+  background-image: linear-gradient(to right, #605e7e, #6b73c1, #37b3cc);
+  margin: 50px 2%;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+/* container title */
+.container-title {
+  font-size: 25px;
+  text-align: center;
+  margin: 0 0 30px 0;
+  color: #ffcc00;
+  text-shadow: 2px 2px #000;
+}
+
+/* container */
+.inputcol {
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: 1fr auto;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.textarea {
+  min-height: 50px;
+  height: 50px;
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: 10px;
+  border: 2px solid #ffcc00;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 1px 1px #000;
+}
+
+.textarea::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #555;
+}
+
+.textarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+.textarea::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #ffcc00;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: #ff5733;
+}
+
+.buttoninput {
+  border-radius: 10px;
+  border: 2px solid #ffcc00;
+  background-color: #ff5733;
+  font-size: 20px;
+  color: white;
+  padding: 0 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttoninput:hover {
+  background-color: #ffcc00;
+  color: #2a2a2a;
+  border-color: #ff5733;
+}
+
+.todolist {
+  margin-top: 20px;
+}
+
+.itemall {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  justify-content: center;
+  margin-bottom: 10px;
+  background-color: #444;
+  border-radius: 10px;
+  border: 2px solid #ffcc00;
+}
+
+.item, .check-button, .trash-button {
+  border: none;
+  background-color: transparent;
+  min-height: 50px;
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+}
+
+.item {
+  word-wrap: break-word;
+  word-break: break-all;
+  display: grid;
+  align-content: center;
+  text-shadow: 1px 1px #000;
+}
+
+.check-button, .trash-button {
+  font-size: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-button {
+  background-color: #28a745;
+  border-radius: 0;
+  border-right: 2px solid #ffcc00;
+}
+
+.trash-button {
+  background-color: #dc3545;
+  border-radius: 0;
+  border-left: 2px solid #ffcc00;
+}
+
+.check-button:hover {
+  background-color: #218838;
+}
+
+.trash-button:hover {
+  background-color: #c82333;
+}
+
+.checklist .item {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.fa-check, .fa-trash {
+  pointer-events: none;
+}
+
+button, .check-button, .trash-button {
+  cursor: pointer;
+}
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+}
+
+body {
+  background-color: #ffcccb;
+  background-image: url('https://www.transparenttextures.com/patterns/dimension.png'); /* Retro pixel pattern */
+  margin: 50px 2%;
+  color: #2a2a2a;
+}
+
+/* container title */
+.container-title {
+  font-size: 25px;
+  text-align: center;
+  margin: 0 0 30px 0;
+  color: #ff6600;
+  text-shadow: 2px 2px #fff;
+}
+
+/* container */
+.inputcol {
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: 1fr auto;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.textarea {
+  min-height: 50px;
+  height: 50px;
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: 10px;
+  border: 2px solid #ff6600;
+  font-size: 20px;
+  padding: 10px;
+  background-color: #fbeeff; /* Lighter playful color */
+  color: #2a2a2a;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 1px 1px #fff;
+}
+
+.textarea::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #ffb6c1; /* Light pink */
+}
+
+.textarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+.textarea::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #ff6600; /* Retro orange */
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: #ff6600;
+}
+
+.buttoninput {
+  border-radius: 10px;
+  border: 2px solid #ff6600;
+  background-color: #ff6600;
+  font-size: 20px;
+  color: white;
+  padding: 0 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttoninput:hover {
+  background-color: #fff;
+  color: #ff6600;
+  border-color: #ff6600;
+}
+
+.todolist {
+  margin-top: 20px;
+}
+
+.itemall {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  justify-content: center;
+  margin-bottom: 10px;
+  background-color: #ffe4e1; /* Lighter playful color */
+  border-radius: 10px;
+  border: 2px solid #ff6600;
+}
+
+.item, .check-button, .trash-button {
+  border: none;
+  background-color: transparent;
+  min-height: 50px;
+  padding: 10px;
+  color: #2a2a2a;
+  font-size: 18px;
+}
+
+.item {
+  word-wrap: break-word;
+  word-break: break-all;
+  display: grid;
+  align-content: center;
+  text-shadow: 1px 1px #fff;
+}
+
+.check-button, .trash-button {
+  font-size: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check-button {
+  background-color: #32cd32; /* Lighter playful green */
+  border-radius: 0;
+  border-right: 2px solid #ff6600;
+}
+
+.trash-button {
+  background-color: #ff4500; /* Lighter retro orange-red */
+  border-radius: 0;
+  border-left: 2px solid #ff6600;
+}
+
+.check-button:hover {
+  background-color: #3cb371;
+}
+
+.trash-button:hover {
+  background-color: #ff6347;
+}
+
+.checklist .item {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.fa-check, .fa-trash {
+  pointer-events: none;
+}
+
+button, .check-button, .trash-button {
+  cursor: pointer;
+}

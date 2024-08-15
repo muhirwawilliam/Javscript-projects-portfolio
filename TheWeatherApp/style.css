@@ -34,7 +34,7 @@ body {
 }
 
 .search-button {
-  background: #FFB6C1; /* Light pink, playful color */
+  background: #ffb6c125;
   border: 3px solid #FFD700;
   align-items: center;
   border-radius: 50%;
@@ -46,7 +46,7 @@ body {
 .search-input {
   border: 3px solid #FFD700;
   outline: 0;
-  background-color: #FFFACD; /* Light yellow background */
+  background-color: #FFFACD;
   color: #555;
   padding: 10px 25px;
   border-radius: 30px;
@@ -71,8 +71,8 @@ body {
 .weather h1 {
   font-size: 80px;
   font-weight: 700;
-  font-family: 'Permanent Marker', sans-serif; /* Handwritten style font */
-  color: #FF6347; /* Tomato red for a playful look */
+  font-family: 'Permanent Marker', sans-serif;
+  color: #FF6347;
   margin-bottom: 20px;
 }
 
@@ -81,7 +81,7 @@ body {
   font-weight: 400;
   margin-top: -10px;
   font-family: 'Jersey 10', sans-serif;
-  color: #20B2AA; /* Light sea green */
+  color: #20B2AA;
 }
 
 .details {
@@ -107,6 +107,6 @@ body {
 .rain, .wind-speed {
   font-size: 28px;
   margin-top: 6px;
-  font-family: 'Jersey 10', sans-serif; /* Retro pixelated style */
-  color: #9dc7e9; /* Steel blue for a soothing look */
+  font-family: 'Jersey 10', sans-serif;
+  color: #9dc7e9;
 }
