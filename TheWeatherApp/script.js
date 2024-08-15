@@ -1,4 +1,3 @@
-
 const apiKey = "4a0992963345759a2bb28de01cb49e09"; // Your API key
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?q=Brussels&units=metric&appid=" + apiKey; // Complete API URL
 
@@ -13,18 +12,14 @@ async function checkWeather(city) {
   document.querySelector(".rain").innerHTML = data.main.humidity + "%";
   document.querySelector(".wind-speed").innerHTML = data.wind.speed + "km/h";
 
-  if (data.weather[0].main == "Clouds"){
-
-    weatherIcon.src = "img/cloudy.png";
-  }
-  else if (data.weather[0].main == "Rain"){
-    weatherIcon.src = "img/rain.png";
-  }
-  else if (data.weather[0].main == "Snow"){
-    weatherIcon.src = "img/snow.png";
-  }
-  else if (data.weather[0].main == "Sun"){
-    weatherIcon.src = "img/sun.png";
+  if (data.weather[0].main == "Clouds") {
+    weatherIcon.src = "img/bewolkt.png";
+  } else if (data.weather[0].main == "Rain") {
+    weatherIcon.src = "img/regenen.png";
+  } else if (data.weather[0].main == "Snow") {
+    weatherIcon.src = "img/sneeuw.png";
+  } else if (data.weather[0].main == "Clear") {
+    weatherIcon.src = "img/zon.png";
   }
 }
 
@@ -37,4 +32,4 @@ searchBtn.addEventListener("click", () => {
 });
 
 // Call the function with a default city if needed
-checkWeather('Brussels');
+checkWeather('Madrid');
