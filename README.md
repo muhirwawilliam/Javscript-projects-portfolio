@@ -1,8 +1,9 @@
-git# Project Portfolio javascript
+# Project Portfolio JavaScript
 
 ## Introduction
 
-I created this project to test and showcase the skills I've acquired so far. The focus was on demonstrating my ability to build functional and visually coherent applications using core web technologies.
+I created this project to test and showcase the skills I've acquired so far. The focus was on demonstrating my ability to build functional and visually coherent applications 
+
 
 ## Projects
 
